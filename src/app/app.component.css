@@ -1,0 +1,16 @@
+.outermostDiv {
+    background-color: lightgray;
+    height: 100vh;
+    /* height: 100vh - calc();
+    width: 100vw; */
+
+}
+
+.containerStyles {
+    min-height: 93.5vh;
+    max-height: 93.5vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
