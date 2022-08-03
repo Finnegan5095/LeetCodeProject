@@ -16,12 +16,12 @@ const routes: Routes = [
   { path: 'sign-in', component: SignInComponent },
   { path: 'register-user', component: SignUpComponent },
   // { path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard] },
-  { path: 'header', component: HeaderComponent, canActivate: [AuthGuard] },
+  // { path: 'header', component: HeaderComponent, canActivate: [AuthGuard] },
   { path: 'forgot-password', component: ForgotPasswordComponent },
   { path: 'verify-email-address', component: VerifyEmailComponent },
-  { path: 'existing-solutions', component: ExistingSolutionsComponent},
-  { path: 'new-solution', component: NewSolutionComponent},
-  { path: 'profile-info', component: ProfileInfoComponent}
+  { path: 'existing-solutions', component: ExistingSolutionsComponent, canActivate: [AuthGuard] },
+  { path: 'new-solution', component: NewSolutionComponent, canActivate: [AuthGuard] },
+  { path: 'profile-info', component: ProfileInfoComponent, canActivate: [AuthGuard] }
 ];
 
 @NgModule({

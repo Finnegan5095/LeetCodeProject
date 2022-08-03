@@ -19,6 +19,9 @@ import { FormsModule } from '@angular/forms';
 import { ExistingSolutionsComponent } from './existing-solutions/existing-solutions.component';
 import { NewSolutionComponent } from './new-solution/new-solution.component';
 import { ProfileInfoComponent } from './profile-info/profile-info.component';
+import { MatButtonModule } from '@angular/material/button';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -40,7 +43,11 @@ import { ProfileInfoComponent } from './profile-info/profile-info.component';
     AngularFireModule.initializeApp(environment.firebaseConfig, 'angular-finn-backend'),
     AngularFirestoreModule,
     AngularFireStorageModule,
-    AngularFireAuthModule
+    AngularFireAuthModule,
+    MatButtonModule,
+    MatIconModule,
+    MatMenuModule
+
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]

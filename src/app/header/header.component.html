@@ -3,39 +3,28 @@
         <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
             <ul class="navbar-nav me-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="existing-solutions">Completed Solutions</a>
+                    <a class="nav-link" routerLink="/existing-solutions">Completed Solutions</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="new-solution">Create New Solution</a>
+                    <a class="nav-link" routerLink="/new-solution">Create New Solution</a>
                 </li>
+                <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+                <!-- #enddocregion mat-menu-trigger-for -->
+                <mat-menu #menu="matMenu">
+                <button mat-menu-item>Item 1</button>
+                <button mat-menu-item>Item 2</button>
+                </mat-menu>
+                <!-- <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark" id="navbarDarkDropdownMenuLink">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li> -->
             </ul>
-        </div>
-        <!-- <div class="mx-auto order-0">
-            <a class="navbar-brand mx-auto" href="#">Chess Home</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".dual-collapse2">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        </div> -->
-        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
-            <ul class="navbar-nav ms-auto">
-                <li>
-            <a
-            class="btn btn-dark dropdown-toggle"
-            role="button"
-            href="#"
-            id="dropdownMenuLink"
-            mdbDropdownToggle
-            aria-expanded="false"> Profile</a>
-            <ul class="navbar-nav ms-auto" mdbDropdownMenu class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-            </ul>
-            <!-- <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                     
-                </li>
-            </ul> -->
-        </li>
-        </ul>
         </div>
     </div>
-</nav>
+  </nav>
